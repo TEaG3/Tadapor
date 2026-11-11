@@ -1,0 +1,69 @@
+name: tadapor
+description: تطبيق تَدَبُّر - مواقيت الصلاة والأذان والأذكار والقرآن والقبلة (مراجع سنية فقط)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # حساب المواقيت (سني)
+  adhan: ^2.0.0+1
+
+  # الموقع والبوصلة
+  geolocator: ^13.0.2
+  flutter_compass: ^0.8.1
+  permission_handler: ^11.3.1
+
+  # الإشعارات والصوت
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  just_audio: ^0.9.42
+  audio_session: ^0.1.21
+  flutter_timezone: ^3.0.1
+
+  # التخزين والتفضيلات
+  shared_preferences: ^2.3.3
+  path_provider: ^2.1.5
+
+  # التاريخ الهجري
+  hijri: ^3.0.0
+
+  # واجهة المستخدم
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.4.1
+
+  # إدارة الحالة
+  provider: ^6.1.2
+
+  # أخرى
+  intl: ^0.19.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/quran/
+    - assets/fonts/
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    - family: Uthmanic
+      fonts:
+        - asset: assets/fonts/UthmanicHafs.ttf
